@@ -1,10 +1,10 @@
 package co.edu.uniquindio.programacion2;
 
-public class vehiculoCarga extends Vehiculo {
+public class VehiculoCarga extends Vehiculo {
     private int carga;
     private int ejes;
 
-    private vehiculoCarga (String placa, String modelo, int marca, int color, int carga, int ejes){
+    public VehiculoCarga(String placa, String modelo, String marca, String color, int carga, int ejes){
         super (placa, modelo, marca,color);
         this.carga = carga;
         this.ejes = ejes;

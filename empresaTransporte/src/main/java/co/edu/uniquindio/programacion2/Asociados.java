@@ -5,14 +5,14 @@ public class Asociados {
     private String id;
     private String email;
     private String celular;
-    private int vehiculo;
+    private String vehiculo;
 
-    public Asociados(String nombre, String id, String email, String celular, int vehivulo){
+    public Asociados(String nombre, String id, String email, String celular, String vehiculo){
         this.nombre = nombre;
         this.id = id;
         this.email = email;
         this.celular = celular;
-        this.vehiculo = vehivulo;
+        this.vehiculo = vehiculo;
     }
 
     public String getNombre(){
@@ -47,11 +47,11 @@ public class Asociados {
         this.celular = celular;
     }
 
-    public int getVehiculo() {
+    public String getVehiculo() {
         return vehiculo;
     }
 
-    public void setVehiculo(int vehiculo) {
+    public void setVehiculo(String vehiculo) {
         this.vehiculo = vehiculo;
     }
 

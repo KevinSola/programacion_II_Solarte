@@ -3,13 +3,13 @@ package co.edu.uniquindio.programacion2;
 public class Vehiculo {
     private String placa;
     private String modelo;
-    private int marca;
-    private int color;
+    private String marca;
+    private String color;
 
     public Vehiculo(){
     }
 
-    public Vehiculo (String placa, String modelo, int marca, int color){
+    public Vehiculo (String placa, String modelo, String marca, String color){
         this.placa = placa;
         this.modelo = modelo;
         this.marca = marca;
@@ -32,19 +32,19 @@ public class Vehiculo {
         this.modelo = modelo;
     }
 
-    public int getMarca(){
+    public String getMarca(){
         return marca;
     }
 
-    public void setMarca(int marca){
+    public void setMarca(String marca){
         this.marca = marca;
     }
 
-    public int getColor(){
+    public String getColor(){
         return color;
     }
 
-    public void setColor(int color){
+    public void setColor(String color){
         this.color = color;
     }
 
