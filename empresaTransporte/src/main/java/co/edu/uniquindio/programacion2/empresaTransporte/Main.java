@@ -1,7 +1,6 @@
 package co.edu.uniquindio.programacion2.empresaTransporte;
 
 import co.edu.uniquindio.programacion2.empresaTransporte.model.Asociados;
-import co.edu.uniquindio.programacion2.empresaTransporte.model.Vehiculo;
 import co.edu.uniquindio.programacion2.empresaTransporte.model.VehiculoCarga;
 import co.edu.uniquindio.programacion2.empresaTransporte.model.VehiculoPasajero;
 
