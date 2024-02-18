@@ -1,4 +1,4 @@
-package co.edu.uniquindio.programacion2;
+package co.edu.uniquindio.programacion2.empresaTransporte.model;
 
 public class Asociados {
     private String nombre;
@@ -15,6 +15,9 @@ public class Asociados {
         this.vehiculo = vehiculo;
     }
 
+    public Asociados(){
+
+    }
     public String getNombre(){
         return nombre;
     }
@@ -54,15 +57,11 @@ public class Asociados {
     public void setVehiculo(String vehiculo) {
         this.vehiculo = vehiculo;
     }
-
-    @Override
     public String toString() {
-        return "Asociado{" +
-                "nombre='" + nombre + '\'' +
-                ", id='" + id + '\'' +
-                ", email='" + email + '\'' +
-                ", celular='" + celular + '\'' +
-                ", vehiculo='" + vehiculo + '\''+
-                '}';
+        return "nombre= " + nombre +
+                ", id= " + id +
+                ", email= " + email +
+                ", celular= " + celular +
+                ", vehiculo= \n" + vehiculo;
     }
 }

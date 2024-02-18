@@ -1,4 +1,4 @@
-package co.edu.uniquindio.programacion2;
+package co.edu.uniquindio.programacion2.empresaTransporte.model;
 
 public class EmpresaTransporte {
     private String nombre;

@@ -1,4 +1,4 @@
-package co.edu.uniquindio.programacion2;
+package co.edu.uniquindio.programacion2.empresaTransporte.model;
 
 public class VehiculoCarga extends Vehiculo {
     private int carga;
@@ -8,6 +8,10 @@ public class VehiculoCarga extends Vehiculo {
         super (placa, modelo, marca,color);
         this.carga = carga;
         this.ejes = ejes;
+    }
+
+    public VehiculoCarga(){
+
     }
 
     public int getCarga() {
@@ -27,9 +31,12 @@ public class VehiculoCarga extends Vehiculo {
     }
 
     public String toString(){
-        return super.toString() +
-                ", capacidadCarga=" + carga +
-                ", numeroEjes=" + ejes;
+        return "Placa: " + getPlaca() + "\n" +
+                "Modelo: " + getModelo() + "\n" +
+                "Marca: " + getMarca() + "\n" +
+                "Color: " + getColor() + "\n" +
+                "Carga: " + carga +
+                "Cantidad de ejes: " + ejes;
     }
 
 }
