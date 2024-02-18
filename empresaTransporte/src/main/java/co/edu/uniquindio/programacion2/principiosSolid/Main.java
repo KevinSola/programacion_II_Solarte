@@ -1,9 +1,11 @@
 package co.edu.uniquindio.programacion2.principiosSolid;
 
+import co.edu.uniquindio.programacion2.principiosSolid.LSPyISP.Heroe;
+import co.edu.uniquindio.programacion2.principiosSolid.LSPyISP.SpiderMan;
+import co.edu.uniquindio.programacion2.principiosSolid.LSPyISP.SuperMan;
 import co.edu.uniquindio.programacion2.principiosSolid.OCP.Edificio;
 import co.edu.uniquindio.programacion2.principiosSolid.OCP.House;
 import co.edu.uniquindio.programacion2.principiosSolid.SRP.EncryptPassword;
-import co.edu.uniquindio.programacion2.principiosSolid.SRP.SaveUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +13,19 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 //        newUser();
-        newResidency();
+//        newResidency();
+        newSuperHeroes();
 
+    }
+
+    public static void newSuperHeroes(){
+        List <Heroe> heroes = new ArrayList<>();
+        heroes.add(new SuperMan("Azul"));
+        heroes.add(new SpiderMan("Rojo y azul"));
+
+        for (Heroe heroe : heroes){
+            System.out.println(heroe.toString());
+        }
     }
 
     public static void newResidency(){
