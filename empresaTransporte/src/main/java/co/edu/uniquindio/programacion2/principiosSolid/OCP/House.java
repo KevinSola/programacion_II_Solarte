@@ -22,4 +22,5 @@ public class House extends Residency{
                 "\nLa residencia se usara como: " + getUseResidence() +
                 "\nEl numero de personas en la residencia es: " + numPeople;
     }
+
 }

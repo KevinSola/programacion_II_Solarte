@@ -1,5 +1,6 @@
 package co.edu.uniquindio.programacion2.principiosSolid;
 
+import co.edu.uniquindio.programacion2.principiosSolid.DIP.*;
 import co.edu.uniquindio.programacion2.principiosSolid.LSPyISP.Heroe;
 import co.edu.uniquindio.programacion2.principiosSolid.LSPyISP.SpiderMan;
 import co.edu.uniquindio.programacion2.principiosSolid.LSPyISP.SuperMan;
@@ -12,10 +13,27 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-//        newUser();
+        newUser();
 //        newResidency();
-        newSuperHeroes();
+//        newSuperHeroes();
+//        newAnimals();
 
+    }
+
+    public static void newAnimals(){
+        List <Animal> animals = new ArrayList<>();
+        animals.add(new Perro("Terrestre"));
+        animals.add(new Salmon("Acuatico"));
+        animals.add(new Barranquero("Volador"));
+        List <Animal> insideAnimal = new ArrayList<>();
+        Granja granja = new Granja(insideAnimal);
+        for (int i = 0; i < animals.size(); i++) {
+            insideAnimal.add(i, animals.get(i));
+        }
+        for(Animal animal : animals){
+            System.out.println(animal.toString());
+        }
+        System.out.println(granja.getAnimals());
     }
 
     public static void newSuperHeroes(){
