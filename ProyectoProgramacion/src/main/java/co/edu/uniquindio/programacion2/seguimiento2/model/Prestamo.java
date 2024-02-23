@@ -28,4 +28,11 @@ public class Prestamo {
     public void setFechaDevolucion(String fechaDevolucion) {
         this.fechaDevolucion = fechaDevolucion;
     }
+
+    public String toString() {
+        return "Prestamo{" +
+                "fechaPrestamo='" + fechaPrestamo + '\'' +
+                ", fechaDevolucion='" + fechaDevolucion + '\'' +
+                '}';
+    }
 }

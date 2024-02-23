@@ -33,12 +33,17 @@ public class Miembro {
         this.idMember = idMember;
     }
 
-    public List<Prestamo> getPrestamos() {
-        return prestamos;
+    public Prestamo getPrestamos(int x) {
+        return prestamos.get(x);
     }
 
     public void setPrestamos(Prestamo add) {
         this.prestamos.add(add);
     }
 
+    public String toString() {
+        return "Miembro{" +
+                "prestamos=" + prestamos.get(0).toString() +
+                '}';
+    }
 }
