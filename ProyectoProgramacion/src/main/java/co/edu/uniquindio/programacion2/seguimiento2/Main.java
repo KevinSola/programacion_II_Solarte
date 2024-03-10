@@ -38,7 +38,11 @@ public class Main {
         miembros.get(0).setPrestamos(prestamos.get(0));
         miembros.get(1).setPrestamos(prestamos.get(1));
         miembros.get(1).setPrestamos(prestamos.get(2));
-        System.out.println(miembros.get(1).getPrestamos(0).toString());
+        for (int i = 0; i < miembros.size(); i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.println(miembros.get(i).getPrestamos(j));
+            }
+        }
 
     }
 }
